@@ -1,0 +1,37 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+
+#define UMENG_APPKEY @"53fd9c8ffd98c55a99028435"
+#define WeChat_APPKEY @"wx7ffac22bcab56e1c"
+#define Mobile_URL @"http://shanku.hao.360.cn/mobile"
+
+// 消息通知命名
+#define Notification_ShakeToShake @"Notification_ShakeToShake"
+#define Notification_ScanAndScan @"Notification_ScanAndScan"
+#define Notification_ShareToFriend @"Notification_ShareToFriend"
+#define Notification_ShareToCircle @"Notification_ShareToCircle"
+#define Notification_AboutShanku @"Notification_AboutShanku"
+
+
+
+
+// 预编译类
+#import "Config.h"
+#import "Tool.h"
+#import "Macros.h"
+
+#endif
